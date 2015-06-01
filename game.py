@@ -73,7 +73,7 @@ def carpet_room():
 
     global carpet
 
-        print '\n'
+    print '\n'
 
     if not carpet:
         print "You are in a room that is illuminated by bright white light."
@@ -121,7 +121,7 @@ def carpet_room():
 
 def treasure_room():
 
-        print "\n"
+    print "\n"
 
     if not torch:
         print "The room is pitch black. You can't see a thing."
@@ -167,7 +167,7 @@ def sphinx_room():
 
     global riddle
 
-        print "\n"
+    print "\n"
     if not riddle:
         print "You are in a small chamber full of gold and jewels."
         print "You see a closed door a few paces from you to the north."
@@ -251,25 +251,25 @@ def lamp_room():
 
             take = raw_input("Take it? y or n > ")
 
-             if "y" in take:
-                 print "Taken."
-                 lamp = True
-                 lamp_room()
-             elif "n" in take:
-                 print "You move back from the pedestal."
-                 lamp_room()
-             else:
-                 print "Wat?"
-                 pass
+            if "y" in take:
+                print "Taken."
+                lamp = True
+                lamp_room()
+            elif "n" in take:
+                print "You move back from the pedestal."
+                lamp_room()
+            else:
+                print "Wat?"
+                pass
 
         elif "e" in go or "w" in go:
-             print "you can't go that way."
-             lamp_room()
+            print "you can't go that way."
+            lamp_room()
         elif "s" in go:
-             sphinx_room()
+            sphinx_room()
         else:
-             print "Wat?"
-             lamp_room()
+            print "Wat?"
+            lamp_room()
 
     else:
         print "You stand by the pedestal, holding the lamp."
@@ -280,7 +280,7 @@ def lamp_room():
 
         if "e" in go or "w" in go or "n" in go:
             print "you can't go that way."
-             lamp_room()
+            lamp_room()
         elif "s" in go:
             print "As you turn to walk south, you feel your leg brush against something metallic."
             print "You hear the tiger roar. Before you can move to the exit, A pile of boulders falls from above, blocking it."
@@ -291,7 +291,7 @@ def lamp_room():
 
 
 def cave():
-        print "\n"
+    print "\n"
     print "You are in the room in which you found the lamp, which you are currently holding."
     print "The only source of light in the room is the torch that the carpet is holding."
     print "What do you do?"
@@ -323,7 +323,7 @@ def cave():
         cave()
 
 def genie():
-        print "\n"
+    print "\n"
     print "A bright blue light explodes from the end of the lamp, followed by copious amounts of blue smoke."
     print "You hear a deafening peal of laughter and gaze in amazement as the smoke begins to gather into a form in front of you."
     print "After a moment a face and body with arms take shape. It's a genie!"
@@ -352,12 +352,12 @@ def genie():
             wish = raw_input("Choose wisely! > ")
 
 def win(why):
-        print "\n"
+    print "\n"
     print why, "You win!"
     exit(0)
 
 def dead(why):
-        print "\n"
+    print "\n"
     print why, "Better luck next time."
     exit(0)
 
